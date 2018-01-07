@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,900);
 * {
   box-sizing: border-box;
 }
@@ -15,7 +15,7 @@ body {
 }
 
 .border {
-  border: 0px solid red;
+  border: 1px solid red;
 }
 
 /* == HEADER == */
@@ -140,7 +140,7 @@ header .jumbotron-circles .circle:hover {
   background-color: #22BAC5;
 }
 
-/* == TEAM == */
+/* == STORY == */
 .story {
   display: flex;
   height: 100vh;
@@ -354,7 +354,6 @@ header .jumbotron-circles .circle:hover {
 
 .team-background .team {
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
   height: 100vh;
@@ -398,29 +397,47 @@ header .jumbotron-circles .circle:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
   flex-wrap: wrap;
-}
-
-.team-background .team .team-row .profile {
   margin-top: 5vh;
-  flex: 25%;
 }
 
-.team-background .team .team-row .profile .profile-picture {
-  width: 200px;
+.team-background .team .team-row .profile-wrapper {
+  display: flex;
+  flex: 25%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+}
+
+.team-background .team .team-row .profile-wrapper .profile-border {
+  border: 1px solid #FFFFFF;
+}
+
+.team-background .team .team-row .profile-wrapper .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  padding-bottom: 10px;
+}
+
+.team-background .team .team-row .profile-wrapper .profile .profile-picture {
+  width: 100%;
   height: 200px;
   background-color: white;
 }
 
-.team-background .team .team-row .profile h2 {
+.team-background .team .team-row .profile-wrapper .profile h2 {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
   color: #FFFFFF;
 }
 
-.team-background .team .team-row .profile p {
+.team-background .team .team-row .profile-wrapper .profile p {
+  margin: 0 auto;
   text-transform: uppercase;
   font-size: 14px;
   text-align: center;
@@ -433,7 +450,7 @@ header .jumbotron-circles .circle:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 5vh;
+  margin-top: 5vh;
 }
 
 .team-background .team .team-footer p {
@@ -442,11 +459,11 @@ header .jumbotron-circles .circle:hover {
   font-size: 14px;
   text-align: center;
   color: #FFFFFF;
+  padding-bottom: 10px;
 }
 
 .team-background .team .team-footer button {
   margin-left: 15px;
-  margin-top: 5vh;
   padding: 10px 30px;
   background-color: none;
   font-size: 14px;
@@ -457,10 +474,208 @@ header .jumbotron-circles .circle:hover {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
-  transition: all 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .team-background .team .team-footer button:hover {
   color: #22BAC5;
   border: 1px solid #22BAC5;
+  transition: 0.2s linear;
+}
+
+/* == GALLERY == */
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.gallery-wrapper .gallery-header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5vh;
+}
+
+.gallery-wrapper .gallery-header .text-bold {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+
+.gallery-wrapper .gallery-header .text-bold p {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.gallery-wrapper .gallery-header .text {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+.gallery-wrapper .gallery-header .text p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.gallery-wrapper .gallery-header .text p:hover {
+  color: #22BAC5;
+  transition: 0.2s linear;
+}
+
+.gallery-wrapper .gallery-header .text p span {
+  font-weight: 700;
+}
+
+.gallery-wrapper .gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+}
+
+.gallery-wrapper .gallery .gallery-picture {
+  display: flex;
+  flex: 16.6%;
+  height: 170px;
+  width: 100%;
+  transition: 0.2s linear;
+}
+
+.gallery-wrapper .gallery .gallery-picture:hover {
+  opacity: 0.7;
+  transition: 0.2s linear;
+}
+
+.gallery-wrapper .gallery .picture-1 {
+  background-color: #7b7b7b;
+}
+
+.gallery-wrapper .gallery .picture-2 {
+  background-color: #b8b8b8;
+}
+
+.gallery-wrapper button {
+  margin-top: 5vh;
+  padding: 10px 30px;
+  background-color: none;
+  font-size: 14px;
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.2s linear;
+}
+
+.gallery-wrapper button:hover {
+  color: #22BAC5;
+  border: 1px solid #22BAC5;
+  transition: 0.2s linear;
+}
+
+.quote-background {
+  background-image: url("https://image.ibb.co/hWifRb/background_1_overlay.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.quote-background .quote-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-background .quote-wrapper .quote-mark {
+  margin-top: 5vh;
+}
+
+.quote-background .quote-wrapper .quote-mark i {
+  font-size: 32px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.quote-background .quote {
+  margin-top: 5vh;
+}
+
+.quote-background .quote p {
+  text-align: center;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.quote-background .quote-author {
+  margin-top: 5vh;
+}
+
+.quote-background .quote-author p {
+  text-align: center;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.quote-background .quote-author p span {
+  font-weight: 400;
+}
+
+.quote-background .quote-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.quote-background .quote-carousel p {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.2s linear;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.quote-background .quote-carousel p:hover {
+  color: #22BAC5;
+  transition: 0.2s linear;
+}
+
+.quote-background .quote-carousel .picture {
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  background-color: #FFFFFF;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.quote-background .quote-carousel .picture:hover {
+  background-color: #22BAC5;
+  transition: 0.2s linear;
 }
