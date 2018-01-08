@@ -15,7 +15,7 @@ body {
 }
 
 .border {
-  border: 0px solid red;
+  border: 1px solid red;
 }
 
 /* == HEADER == */
@@ -588,6 +588,7 @@ header .jumbotron-circles .circle:hover {
   transition: 0.2s linear;
 }
 
+/* == QUOTE == */
 .quote-background {
   background-image: url("https://image.ibb.co/hWifRb/background_1_overlay.jpg");
   background-size: cover;
@@ -678,4 +679,153 @@ header .jumbotron-circles .circle:hover {
 .quote-background .quote-carousel .picture:hover {
   background-color: #22BAC5;
   transition: 0.2s linear;
+}
+
+/* == CONTACT == */
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.contact .contact-wrapper .contact-title p {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact .contact-wrapper .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 100%;
+}
+
+.contact .contact-wrapper .contact-form .field-wrap {
+  display: flex;
+  flex: 100%;
+}
+
+.contact .contact-wrapper button {
+  margin-top: 5vh;
+  padding: 10px 30px;
+  background-color: none;
+  font-size: 14px;
+  color: #000000;
+  border: 1px solid #000000;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: 0.2s linear;
+}
+
+.contact .contact-wrapper button:hover {
+  color: #22BAC5;
+  border: 1px solid #22BAC5;
+  transition: 0.2s linear;
+}
+
+.contact .clients-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.contact .clients-wrapper .clients-title p {
+  font-size: 24px;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* == FOOTER == */
+.footer-background {
+  background-image: url("https://image.ibb.co/hWifRb/background_1_overlay.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.footer-background .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-background .footer-wrapper .footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-background .footer-wrapper .footer-content .footer-element {
+  display: flex;
+  flex: 33.3%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer-background .footer-wrapper .footer-content .footer-element .element-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-background .footer-wrapper .footer-content .footer-element .social-media-buttons .icon-btn {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.footer-background .footer-wrapper .footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 100%;
+}
+
+.footer-background .footer-wrapper .footer-bottom .footer-contact {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-background .footer-wrapper .footer-bottom .footer-contact ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+}
+
+.footer-background .footer-wrapper .footer-bottom .footer-contact a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0px;
+  color: #FFFFFF;
+  transition: color 0.2s linear;
+}
+
+.footer-background .footer-wrapper .footer-bottom .footer-contact a:hover {
+  color: #22BAC5;
 }
