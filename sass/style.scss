@@ -777,12 +777,21 @@ header {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			flex: 100%;
 			
-			.field-wrap {
+			form {
 				display: flex;
-				flex: 100%;
-			}
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				flex: 1;
+
+				input {
+					display: flex;
+					flex: 1;
+				}
+
+			}		
+
 		}
 		
 		button {
@@ -825,6 +834,19 @@ header {
 				text-transform: uppercase;	
 			}
 				
+		}
+
+		.clients-logo {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+
 		}
 	}
 	

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>First layout</title>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="sass/style.css">
     </head>
     <body>
     	
@@ -141,7 +141,7 @@
 		    		</div>	
 	    		</div>
 	    	</div>
-	    <section>
+	    </section>
 	    
 	    <!-- TEAM -->
 	    <section>
@@ -211,12 +211,12 @@
 		    		<div class="gallery-picture picture-2 border"></div>
 		    		<div class="gallery-picture picture-1 border"></div>
 		    		<div class="gallery-picture picture-2 border"></div>
-		    		<div class="gallery-picture picture-1 border"></div>
 		    		<div class="gallery-picture picture-2 border"></div>
 		    		<div class="gallery-picture picture-1 border"></div>
 		    		<div class="gallery-picture picture-2 border"></div>
 		    		<div class="gallery-picture picture-1 border"></div>
 		    		<div class="gallery-picture picture-2 border"></div>
+		    		<div class="gallery-picture picture-1 border"></div>
 		    	</div>
 		    	<button>Learn more</button>
 		    </div>
@@ -236,7 +236,7 @@
 		    			<p>Jane Garadiel<br><span>CEO Tengkurep</span></p>
 		    		</div>
 		    		<div class="quote-carousel border">
-		    			<p><</p>
+		    			<p>&lt;</p>
 		    			<div class="picture">
 		    			</div>
 		    			<div class="picture">
@@ -262,15 +262,9 @@
 			    	</div>
 			    	<div class="contact-form">
 			    		<form>
-							<div class="field-wrap">
-								<input name="firstName" placeholder="First name *" required type="text">
-							</div>
-							<div class="field-wrap">
-								<input name="email" placeholder="Email address *" required type="email">
-							</div>
-							<div class="field-wrap">
-								<input placeholder="Message *" required type="text">
-						       </div>
+							<input name="firstName" placeholder="Name" required type="text">
+							<input name="email" placeholder="Email" required type="email">
+							<textarea rows="6" placeholder="Message"></textarea>
 							<button class="button" type="submit">Submit</button>
 					    </form>
 			    	</div>
@@ -280,16 +274,36 @@
 			    		<p>Our happy clients</p>
 			    	</div>
 			    	<div class="clients-logo">
-			    		<div class="zara-logo"></div>
-			    		<div class="mango-logo"></div>
-			    		<div class="berneys-logo"></div>
-			    		<div class="gucci-logo"></div>
-			    		<div class="calvinklein-logo"></div>
-			    		<div class="nike-logo"></div>
-			    		<div class="converse-logo"></div>
-			    		<div class="puma-logo"></div>
-			    		<div class="levis-logo"></div>
-			    		<div class="billabong-logo"></div>
+						<div class="zara-logo">
+							<img src="/images/logo/Zara_Logo.png" alt="Zara">
+						</div>
+			    		<div class="mango-logo">
+							<img src="/images/logo/Logo_Mango.png" alt="Mango">
+						</div>
+			    		<div class="berneys-logo">
+							<img src="/images/logo/Barneys_New_York_Logo.png" alt="Barneys New York">
+						</div>
+			    		<div class="gucci-logo">
+							<img src="/images/logo/Gucci_Logo.png" alt="Gucci">
+						</div>
+			    		<div class="calvinklein-logo">
+							<img src="/images/logo/Calvin_klein_logo.png" alt="Calvin Klein">
+						</div>
+			    		<div class="nike-logo">
+							<img src="/images/logo/Logo_NIKE.png" alt="Nike">
+						</div>
+			    		<div class="converse-logo">
+							<img src="/images/logo/Converse_logo.png" alt="Converse">
+						</div>
+			    		<div class="puma-logo">
+							<img src="/images/logo/Puma_Logo.png" alt="Puma">
+						</div>
+			    		<div class="levis-logo">
+							<img src="/images/logo/Levi's_logo.png" alt="Levi's">
+						</div>
+			    		<div class="billabong-logo">
+							<img src="/images/logo/Billabong.png" alt="Billabong">
+						</div>
 			    	</div>
 			    </div>
 			</div>
@@ -317,29 +331,30 @@
 	    						<input name="email" placeholder="Email address *" required type="email">
 	    						<div class="icon-wrapper border">
 	    							<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-	    						</div>
+								</div>
+							</div>
+							<div class="social-media-buttons border">
+								<button class="icon-btn">
+									<i class="fa fa-twitter"></i>
+								</button>
+								<button class="icon-btn">
+									<i class="fa fa-facebook"></i>
+								</button>
+								<button class="icon-btn">
+									<i class="fa fa-google-plus"></i>
+								</button>
+								<button class="icon-btn instagram">
+									<i class="fa fa-instagram"></i>
+								</button>
+								<button class="icon-btn">
+									<i class="fa fa-github"></i>
+								</button>
+								<button class="icon-btn">
+									<i class="fa fa-youtube"></i>
+								</button>
+							</div>
 	    				</div>
-						<div class="social-media-buttons border">
-							<button class="icon-btn">
-    							<i class="fa fa-twitter"></i>
-    						</button>
-    						<button class="icon-btn">
-    							<i class="fa fa-facebook"></i>
-    						</button>
-    						<button class="icon-btn">
-    							<i class="fa fa-google-plus"></i>
-    						</button>
-    						<button class="icon-btn instagram">
-    							<i class="fa fa-instagram"></i>
-    						</button>
-    						<button class="icon-btn">
-    							<i class="fa fa-github"></i>
-    						</button>
-    						<button class="icon-btn">
-    							<i class="fa fa-youtube"></i>
-    						</button>
-						</div>
-	    			</div>
+					</div>
 	    			<div class="footer-bottom border">
 	    				<div class="footer-contact border">
 			    			<ul>
