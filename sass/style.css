@@ -15,7 +15,7 @@ body {
 }
 
 .border {
-  border: 1px solid red;
+  border: 0px solid red;
 }
 
 /* == HEADER == */
@@ -33,8 +33,9 @@ header .menu {
 
 header .logo {
   display: flex;
-  flex: 1;
+  flex: 50%;
   justify-content: flex-start;
+  align-items: center;
 }
 
 header ul {
@@ -710,6 +711,7 @@ header .jumbotron-circles .circle:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 100%;
 }
 
 .contact .contact-wrapper .contact-form form {
@@ -717,12 +719,6 @@ header .jumbotron-circles .circle:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  flex: 1;
-}
-
-.contact .contact-wrapper .contact-form form input {
-  display: flex;
-  flex: 1;
 }
 
 .contact .contact-wrapper button {
@@ -761,24 +757,50 @@ header .jumbotron-circles .circle:hover {
   text-transform: uppercase;
 }
 
-.contact .clients-wrapper .clients-logo {
+.contact .clients-wrapper .clients-logo-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
 }
 
-.contact .clients-wrapper .clients-logo img {
-  width: 100%;
-  height: 100%;
+.contact .clients-wrapper .clients-logo-wrapper .clients-logo-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact .clients-wrapper .clients-logo-wrapper .clients-logo-left .logo {
+  display: flex;
+  flex: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.contact .clients-wrapper .clients-logo-wrapper .clients-logo-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact .clients-wrapper .clients-logo-wrapper .clients-logo-right .logo {
+  display: flex;
+  flex: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
 /* == FOOTER == */
 .footer-background {
-  background-image: url("https://image.ibb.co/hWifRb/background_1_overlay.jpg");
+  background-image: url("../images/background-5-overlay.jpg");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 50vh;
 }
 
 .footer-background .footer-wrapper {
@@ -786,13 +808,14 @@ header .jumbotron-circles .circle:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 5vh;
 }
 
 .footer-background .footer-wrapper .footer-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .footer-background .footer-wrapper .footer-content .footer-element {
@@ -803,37 +826,143 @@ header .jumbotron-circles .circle:hover {
   align-items: flex-start;
 }
 
-.footer-background .footer-wrapper .footer-content .footer-element .element-logo {
+.footer-background .footer-wrapper .footer-content .left .element-logo {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-.footer-background .footer-wrapper .footer-content .footer-element .social-media-buttons .icon-btn {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 30px;
+.footer-background .footer-wrapper .footer-content .left p {
+  color: #FFFFFF;
+  font-size: 14px;
+  padding-right: 50px;
+}
+
+.footer-background .footer-wrapper .footer-content .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-background .footer-wrapper .footer-content .center p {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.footer-background .footer-wrapper .footer-content .center .element-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 100%;
+}
+
+.footer-background .footer-wrapper .footer-content .center .element-row .i-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 30px;
+}
+
+.footer-background .footer-wrapper .footer-content .center .element-row .i-wrapper i {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+.footer-background .footer-wrapper .footer-content .center .element-row .p-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-background .footer-wrapper .footer-content .center .element-row .p-wrapper p {
+  text-transform: none;
+  font-size: 14px;
+  font-weight: 300;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.footer-background .footer-wrapper .footer-content .right p {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.footer-background .footer-wrapper .footer-content .right .element-submit {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-background .footer-wrapper .footer-content .right .element-submit button {
+  margin-left: 15px;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  background-color: rgba(199, 199, 199, 0.5);
+  border: none;
+  color: #FFFFFF;
+  transition: 0.2s linear;
+}
+
+.footer-background .footer-wrapper .footer-content .right .element-submit button:hover {
+  color: #22BAC5;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.footer-background .footer-wrapper .footer-content .right .social-media-buttons {
+  margin-top: 15px;
+}
+
+.footer-background .footer-wrapper .footer-content .right .social-media-buttons .icon-btn {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 5px;
+  transition: 0.2s linear;
+}
+
+.footer-background .footer-wrapper .footer-content .right .social-media-buttons .icon-btn:hover {
+  color: #22BAC5;
+  border: 1px solid #22BAC5;
+  transition: 0.2s linear;
+  cursor: pointer;
 }
 
 .footer-background .footer-wrapper .footer-bottom {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex: 100%;
+  width: 100%;
+  margin-top: 5vh;
 }
 
 .footer-background .footer-wrapper .footer-bottom .footer-contact {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
 
 .footer-background .footer-wrapper .footer-bottom .footer-contact ul {
   display: flex;
   justify-content: flex-start;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-background .footer-wrapper .footer-bottom .footer-contact li {
+  margin: 10px 15px 10px 0;
 }
 
 .footer-background .footer-wrapper .footer-bottom .footer-contact a {
@@ -847,4 +976,13 @@ header .jumbotron-circles .circle:hover {
 
 .footer-background .footer-wrapper .footer-bottom .footer-contact a:hover {
   color: #22BAC5;
+}
+
+.footer-background .footer-wrapper .footer-bottom .copyright {
+  margin: 10px 0 10px 0;
+}
+
+.footer-background .footer-wrapper .footer-bottom .copyright p {
+  font-size: 14px;
+  color: #FFFFFF;
 }
